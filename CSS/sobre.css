@@ -1,0 +1,149 @@
+/* Reset básico pra garantir que tudo fique igual entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do corpo */
+body {
+    background: #f4f4f4; /* Cor de fundo clarinha */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaço entre linhas */
+}
+
+/* Estilização do header */
+header {
+    background: linear-gradient(135deg, #27ddf5, #6c9deb); /* Gradiente azul no cabeçalho */
+    color: #fff; /* Texto branco */
+    padding: 1rem 0; /* Espaçamento em cima e embaixo */
+}
+
+header .container {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    justify-content: space-between; /* Espaça itens nas extremidades */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento lateral */
+}
+
+header .logo {
+    width: 150px; /* Largura da logo */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease-in-out; /* Transição suave no hover */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Aumenta a logo ao passar o mouse */
+}
+
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Itens do menu em linha */
+}
+
+header nav ul li {
+    margin-left: 2rem; /* Espaçamento entre itens do menu */
+}
+
+header nav ul li a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease-in-out; /* Transição suave na cor ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    color: #696860; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilização da seção sobre */
+.sobre {
+    padding: 2rem 0; /* Espaçamento em cima e embaixo */
+    background: linear-gradient(135deg, #7f8c8d, #2c3e50); /* Gradiente escuro de fundo */
+    color: #fff; /* Texto branco */
+}
+
+.sobre .container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento lateral */
+}
+
+.sobre h1 {
+    font-size: 2.5rem; /* Tamanho do título principal */
+    margin-bottom: 1rem; /* Espaçamento embaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.sobre p {
+    font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 2rem; /* Espaçamento embaixo dos parágrafos */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sobre hr {
+    border: 0; /* Remove bordas padrão do hr */
+    border-top: 1px solid #fff; /* Linha branca no hr */
+    margin: 2rem 0; /* Espaçamento em cima e embaixo */
+    opacity: 0.7; /* Linha um pouco transparente */
+}
+
+.sobre h2 {
+    font-size: 2rem; /* Tamanho dos subtítulos */
+    margin-bottom: 1rem; /* Espaçamento embaixo dos subtítulos */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sobre li {
+    font-size: 1.2rem; /* Tamanho da fonte dos itens da lista */
+    margin: 0.5rem 0; /* Espaçamento em cima e embaixo dos itens */
+    list-style-type: none; /* Remove os marcadores da lista */
+    text-align: center; /* Centraliza o texto dos itens */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 0.5rem; /* Espaçamento interno dos itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Transição suave nas mudanças de fundo e cor */
+}
+
+.sobre li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Fundo mais claro ao passar o mouse */
+    color: #3197c7; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilização do footer */
+footer {
+    background: #333; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Texto centralizado */
+    padding: 1rem 0; /* Espaçamento em cima e embaixo */
+}
+
+footer .container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento lateral */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Empilha itens em coluna para telas pequenas */
+        align-items: flex-start; /* Alinha itens no início da coluna */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Menu em coluna */
+        margin-top: 1rem; /* Espaçamento em cima do menu */
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0; /* Espaçamento reduzido entre itens do menu */
+    }
+
+    .sobre li {
+        font-size: 1rem; /* Tamanho da fonte reduzido para telas menores */
+    }
+}

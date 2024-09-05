@@ -1,0 +1,128 @@
+/* Reset básico pra deixar tudo igual entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    background: #f0f0f0; /* Cor de fundo clarinha */
+    color: #333; /* Cor do texto um pouco escura */
+    line-height: 1.6; /* Espaço entre linhas */
+}
+
+/* Estilo do header (cabeçalho) */
+header {
+    background: linear-gradient(135deg, #27ddf5, #6c9deb); /* Gradiente azul bacana */
+    color: #fff; /* Texto branco */
+    padding: 1rem 0; /* Espaçamento em cima e embaixo */
+}
+
+header .container {
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: space-between; /* Espaça os itens nas extremidades */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 1rem; /* Espaçamento nas laterais */
+}
+
+header .logo {
+    width: 150px; /* Largura da logo */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Aumenta um pouco a logo ao passar o mouse */
+}
+
+header nav ul {
+    list-style: none; /* Remove os marcadores das listas */
+    display: flex; /* Flexbox para alinhamento horizontal */
+}
+
+header nav ul li {
+    margin-left: 2rem; /* Espaçamento entre os itens do menu */
+}
+
+header nav ul li a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    transition: color 0.3s ease-in-out; /* Transição suave na cor ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    color: #646262; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo da seção de projetos */
+.projetos {
+    padding: 2rem 0; /* Espaçamento em cima e embaixo */
+    background: linear-gradient(135deg, #7f8c8d, #2c3e50); /* Gradiente escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+.projetos .container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 1rem; /* Espaçamento nas laterais */
+}
+
+.projetos h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaçamento embaixo do título */
+}
+
+.projetos p {
+    font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 2rem; /* Espaçamento embaixo dos parágrafos */
+}
+
+.projetos-item img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+.projetos-item img:hover {
+    transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
+}
+
+/* Estilo do footer (rodapé) */
+footer {
+    background: #333; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Texto centralizado */
+    padding: 1rem 0; /* Espaçamento em cima e embaixo */
+}
+
+footer .container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 1rem; /* Espaçamento nas laterais */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Empilha os itens em coluna */
+        align-items: flex-start; /* Alinha os itens no início da coluna */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Menu em coluna */
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0; /* Espaçamento reduzido entre os itens do menu */
+    }
+
+    .projetos-item img {
+        width: 100%; /* Imagem ocupa toda a largura disponível */
+    }
+}

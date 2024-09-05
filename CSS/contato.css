@@ -1,0 +1,200 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do corpo */
+body {
+    background: #f4f4f4; 
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estilização do header */
+header {
+    background: linear-gradient(135deg, #27ddf5, #6c9deb); /* Gradiente de cor para o cabeçalho */
+    color: #fff;
+    padding: 1rem 0; /* Espaçamento interno */
+}
+
+header .container {
+    display: flex; /* Layout flexível para alinhamento dos itens */
+    align-items: center; /* Alinhamento vertical dos itens */
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento interno */
+}
+
+header .logo {
+    width: 150px; /* Largura do logo */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de hover */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do logo ao passar o mouse */
+}
+
+header nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Layout flexível para itens de navegação */
+}
+
+header nav ul li {
+    margin-left: 2rem; /* Espaçamento entre itens de navegação */
+}
+
+header nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    color: #63625e; /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Estilo da seção de contato */
+.contato {
+    padding: 2rem 0; /* Espaçamento interno da seção */
+    background: linear-gradient(135deg, #7f8c8d, #2c3e50); /* Gradiente de cor de fundo */
+    color: #fff; /* Cor do texto */
+}
+
+.contato .container {
+    max-width: 800px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento interno */
+}
+
+.contato h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.contato form {
+    display: flex; /* Layout flexível para o formulário */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 1rem; /* Espaçamento entre os campos do formulário */
+    margin-bottom: 2rem; /* Espaçamento abaixo do formulário */
+}
+
+.contato label {
+    font-size: 1.1rem; /* Tamanho da fonte dos rótulos */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo dos rótulos */
+}
+
+.contato input,
+.contato textarea {
+    padding: 0.75rem; /* Espaçamento interno dos campos */
+    font-size: 1rem; /* Tamanho da fonte dos campos */
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para os campos */
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out; /* Transição suave para efeito de foco */
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border: 2px solid #fff; /* Borda ao focar no campo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao focar */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+.contato textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    height: 150px; /* Altura inicial da área de texto */
+}
+
+.contato button {
+    padding: 1rem 2rem; /* Espaçamento interno do botão */
+    background: #fff; /* Cor de fundo do botão */
+    color: #3a3737; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+.contato button:hover {
+    background: #4e4a4a; /* Cor de fundo do botão ao passar o mouse */
+    color: #ffffff; /* Cor do texto do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.contato h2 {
+    font-size: 2rem; /* Tamanho da fonte do subtítulo */
+    margin: 1.5rem 0; /* Espaçamento acima e abaixo do subtítulo */
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+.contato li {
+    list-style: none; /* Remove marcadores de lista */
+    font-size: 1.2rem; /* Tamanho da fonte dos itens da lista */
+    margin: 0.5rem 0; /* Espaçamento entre itens da lista */
+    text-align: center; /* Centraliza o texto dos itens da lista */
+}
+
+.contato li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor ao passar o mouse */
+}
+
+.contato li a:hover {
+    color: #6b6b68; /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Estilização do footer */
+footer {
+    background: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Espaçamento interno do rodapé */
+}
+.icones {
+    text-align: center;
+}
+.email {
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px; /* Largura máxima do container do rodapé */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1rem; /* Espaçamento interno */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Alinha os itens do cabeçalho em coluna em telas menores */
+        align-items: flex-start; /* Alinha itens do cabeçalho à esquerda */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Alinha os itens do menu em coluna em telas menores */
+        margin-top: 1rem; /* Espaçamento acima do menu em telas menores */
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0; /* Espaçamento entre itens do menu em telas menores */
+    }
+
+    .contato input,
+    .contato textarea {
+        font-size: 1rem; /* Tamanho da fonte dos campos em telas menores */
+    }
+
+    .contato button {
+        padding: 0.75rem 1.5rem; /* Espaçamento interno reduzido para botões em telas menores */
+        font-size: 1rem; /* Tamanho da fonte do botão em telas menores */
+    }
+}

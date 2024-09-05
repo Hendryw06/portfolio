@@ -1,0 +1,177 @@
+/* Faz o body ocupar a tela toda e usa flexbox para o layout */
+html, body {
+    height: 100%; /* Faz o HTML e o body terem altura total da tela */
+}
+
+body {
+    display: flex; /* Usa flexbox para o layout geral */
+    flex-direction: column; /* Organiza os itens em coluna */
+    background: linear-gradient(135deg, #7f8c8d, #2c3e50); /* Fundo com gradiente de cor */
+    color: #ffffff; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Garante que o main ocupa o espaço restante */
+main {
+    flex: 1; /* Faz o main se esticar para preencher o espaço disponível */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(135deg, #27ddf5, #6c9deb); /* Fundo com gradiente legal */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 1rem 0; /* Espaçamento interno no cabeçalho */
+}
+
+header .container {
+    display: flex; /* Flexbox para alinhar itens no cabeçalho */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    justify-content: space-between; /* Espaça itens horizontalmente */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 1rem; /* Espaçamento interno do container */
+}
+
+header .logo {
+    width: 150px; /* Largura do logo */
+    border-radius: 8px; /* Bordas arredondadas no logo */
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeito de hover */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Aumenta o logo ao passar o mouse */
+}
+
+header nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Flexbox para itens de navegação */
+}
+
+header nav ul li {
+    margin-left: 2rem; /* Espaço entre itens de navegação */
+}
+
+header nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor do link */
+}
+
+header nav ul li a:hover {
+    color: #5a5454; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilo dos títulos e parágrafos */
+h1 {
+    text-align: center; /* Centraliza o título */
+    margin: 2rem 0; /* Espaço acima e abaixo do título */
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    color: #ffffff; /* Cor do texto do título */
+}
+
+p {
+    text-align: center; /* Centraliza o parágrafo */
+    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 2rem; /* Espaço abaixo do parágrafo */
+    color: #ffffff; /* Cor do texto do parágrafo */
+}
+
+/* Estilo da seção hero */
+.hero {
+    padding: 4rem 0; /* Espaço interno na seção hero */
+    text-align: center; /* Centraliza o texto na seção hero */
+}
+
+.hero-content {
+    max-width: 800px; /* Largura máxima da seção hero */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 1rem; /* Espaçamento interno */
+}
+
+.hero-content li {
+    list-style: none; /* Remove marcadores da lista */
+    margin: 1rem 0; /* Espaço entre itens da lista */
+}
+
+.cta-button {
+    display: inline-block; /* Exibe o botão como bloco em linha */
+    padding: 1rem 2rem; /* Espaçamento interno do botão */
+    background: #ffffff; /* Cor de fundo do botão */
+    color: #494343; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado do botão */
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    border-radius: 8px; /* Bordas arredondadas no botão */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra suave */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transição suave para hover */
+}
+
+.cta-button:hover {
+    background: #5e5a5a; /* Cor de fundo do botão ao passar o mouse */
+    color: #000000; /* Cor do texto do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+.hero-content a {
+    color: #000000; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease-in-out; /* Transição suave para a cor dos links */
+}
+
+.hero-content a:hover {
+    color: #ffffff; /* Cor do texto dos links ao passar o mouse */
+}
+
+hr {
+    border: 0; /* Remove bordas padrão */
+    border-top: 1px solid #fff; /* Borda superior branca */
+    margin: 2rem 0; /* Espaçamento acima e abaixo */
+    opacity: 0.7; /* Transparência da linha */
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Espaçamento interno */
+    width: 100%; /* Faz o rodapé ocupar a largura total */
+    position: relative; /* Pode ser útil para alinhamento e posicionamento */
+    bottom: 0; /* Garante que o rodapé fique no fundo da página se necessário */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+footer .container {
+    max-width: 1200px; /* Largura máxima do container do rodapé */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0; /* Remove padding lateral */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Organiza itens do cabeçalho em coluna em telas menores */
+        align-items: flex-start; /* Alinha itens do cabeçalho à esquerda */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Organiza itens do menu em coluna em telas menores */
+        margin-top: 1rem; /* Espaçamento acima do menu em telas menores */
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0; /* Espaço entre itens do menu em telas menores */
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.5rem; /* Espaçamento interno reduzido do botão em telas menores */
+        font-size: 1rem; /* Tamanho da fonte do botão em telas menores */
+    }
+
+    .hero-content a {
+        font-size: 1rem; /* Tamanho da fonte dos links em telas menores */
+    }
+}
